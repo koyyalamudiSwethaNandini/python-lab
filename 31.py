@@ -1,0 +1,15 @@
+from tkinter import *
+root=Tk()
+root.title("Registration form")
+root.geometry('400x400')
+Label(root,text='Name').grid(row=0,column=0)
+Entry(root).grid(row=0,column=1)
+Label(root,text='Email').grid(row=1,column=0)
+Entry(root).grid(row=1,column=1)
+Label(root,text='Password').grid(row=2,column=0)
+Entry(root,show='*').grid(row=2,column=1)
+Label(root,text='Gender').grid(row=3,column=0)
+gender=StringVar()
+Radiobutton(root,text='Male',variable=gender ,value='Male').grid(row=3,column=1)
+Radiobutton(root,text='feMale',variable=gender ,value='female').grid(row=3,column=2)
+
